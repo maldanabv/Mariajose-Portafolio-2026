@@ -24,5 +24,19 @@ Este proyecto es un sitio web estático que presenta el portfolio de MJ Digital 
 - **Color accent**: `hwb(353 18% 55%)` usado para highlights y hovers.
 - **Color LinkedIn**: `#fde2e2` para el enlace en el footer.
 
+## Actualizaciones Recientes (Abril 2026)
+
+### Responsividad y Adaptabilidad
+- **Meta Viewport**: Se ha añadido la etiqueta `meta viewport` para asegurar que el sitio sea totalmente interactivo y se adapte correctamente a cualquier dispositivo móvil, tablet o escritorio.
+
+### Nuevas Secciones "Dark Edition"
+- **Servicios y Portafolio**: Se han creado versiones independientes y modernizadas de estas secciones en una "Dark Edition" (`services.html` y `portfolio.html`). 
+- **Diseño Diferente**: Estas nuevas ventanas presentan un estilo visual técnico y minimalista, con fondos oscuros profundos y acentos en naranja neón.
+- **Navegación en Ventana Nueva**: Los enlaces del menú principal ahora abren estas secciones en pestañas independientes para una experiencia de usuario multi-ventana.
+
+### Integración de Proyectos Externos
+- **Sobre Mí (about-me)**: Se ha integrado el proyecto `about-me` directamente dentro del repositorio de MJ Digital Studio.
+- **Vínculos Dinámicos**: El enlace "Sobre mí" ahora conecta automáticamente con el archivo `index.html` del proyecto integrado, permitiendo una transición fluida entre ambos sitios.
+
 
 
