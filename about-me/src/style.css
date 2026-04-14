@@ -1,0 +1,158 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color:#F5F3F0;
+  color: #333;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background-color: #F5F3F0;
+}
+
+.navbar ul {
+  display: flex; 
+  list-style: none;
+  gap: 20px; }
+.navbar a
+{
+  text-decoration: none;
+  color: #333;
+  font-weight: bold; 
+}
+
+
+.hero {
+  display: flex;
+  background-color: #F5F3F0;
+  padding: 60px 8%;
+  align-items: center;
+}
+
+.hero-image { flex: 1; position: relative; }
+.hero-image img { width: 300px; border-radius: 20px; position: relative; z-index: 2; }
+.ux-text-bg { 
+  position: absolute; 
+  font-size: 150px;
+  color: #722F37; 
+  top: 0;
+  left: 0; 
+  font-weight: 900; 
+}
+
+.hero-content { 
+  flex: 1; 
+  padding-left: 40px; 
+}
+.hero-content h1 span
+{
+  color: #722F37; 
+}
+
+
+.btn-dark {
+  background: #333; 
+  color: white; 
+  padding: 12px 25px;
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-outline
+{
+  background: white;
+  border: 1px solid #333;
+  padding: 12px 25px; 
+  
+  border-radius: 5px; 
+  margin-left: 10px;
+  cursor: pointer; 
+}
+
+
+.about-skills {
+  display: flex;
+  background-color:#F5F3F0; 
+  padding: 80px 8%;
+  gap: 50px;
+}
+
+.philosophy, .technical-skills 
+{
+  flex: 1; 
+}
+
+.stats
+{
+  display: flex; 
+gap: 30px;
+  margin-top: 30px;
+}
+.stats h3
+{ 
+  font-size: 2rem;
+  color: #722F37;
+  margin: 0;
+}
+
+.skill-bar
+{ 
+  margin-bottom: 20px;
+}
+.bar 
+{
+  background: #ddd; 
+  height: 8px; 
+  border-radius: 4px; 
+  margin-top: 5px;
+}
+.fill 
+{ 
+  background: #722F37; 
+  height: 100%;
+  border-radius: 4px;
+}
+
+.contact {
+  display: flex;
+  background-color: #F5F3F0;
+  padding: 80px 8%;
+}
+
+.contact-text { flex: 1; 
+}
+.contact-form { 
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea { padding: 
+  15px;
+  border: 
+    none;
+  border-radius: 5px; 
+}
+.btn-send}
+{ 
+  background: #333;
+  color: white;
+  padding: 15px; 
+  border: none;
+  cursor: pointer; 
+}
+
+
+footer {
+  background-color: #1a1a1a;
+  color: white;
+  padding: 40px;
+  text-align: center;
+}

@@ -1,0 +1,146 @@
+CAMBIOS REALIZADOS EN EL PROYECTO MJ DIGITAL STUDIO
+===============================================
+
+Fecha: Abril 8, 2026
+Proyecto: Portfolio MJ Digital Studio
+Ubicación: c:\Users\Majo\Downloads\mj-digital-studio
+
+Este documento detalla paso a paso todos los cambios realizados en el proyecto,
+desde optimizaciones en HTML y CSS hasta la subida a GitHub.
+
+PASO 1: Optimización del texto en la sección Hero
+--------------------------------------------------
+Archivo modificado: dist/index.html
+Línea aproximada: 39
+
+Cambio realizado:
+- Texto original: "Creo experiencias digitales a través del diseño visual, el branding y la dirección creativa. Te doy un recorrido por mis habilidades."
+- Texto nuevo: "Diseño experiencias digitales con branding y dirección creativa."
+
+Motivo: Hacer el texto más conciso y directo.
+
+PASO 2: Compactación del código HTML en la sección Hero Image
+-------------------------------------------------------------
+Archivo modificado: dist/index.html
+Sección: hero-image
+
+Cambio realizado:
+- Código original con saltos de línea y espacios innecesarios.
+- Código compactado: <div class="hero-image"><div class="ux-bg">UX</div></div>
+
+Motivo: Reducir el tamaño del archivo HTML y mejorar la legibilidad del código.
+
+PASO 3: Agregar interactividad a los botones
+---------------------------------------------
+Archivo modificado: dist/style.css
+
+Cambios realizados:
+- Agregado transition a .btn-talk, .btn-primary, .btn-secondary, .contact-form button
+- Agregado hover con:
+  - background: var(--accent-orange) (hwb(353 18% 55%))
+  - color: white
+  - box-shadow: 0 14px 30px rgba(255, 77, 41, 0.2)
+  - transform: translateY(-2px) para .btn-secondary
+
+Motivo: Mejorar la experiencia de usuario con efectos visuales al interactuar con botones.
+
+PASO 4: Agregar interactividad a los enlaces de navegación
+---------------------------------------------------------
+Archivo modificado: dist/style.css
+
+Cambios realizados:
+- Agregado transition: color 0.3s ease a .navbar a
+- Agregado hover: color: var(--accent-orange)
+
+Motivo: Hacer la navegación más interactiva y visualmente atractiva.
+
+PASO 5: Crear hipervínculo para LinkedIn
+-----------------------------------------
+Archivo modificado: dist/index.html
+Sección: footer
+
+Cambio realizado:
+- Texto "LinkedIn" convertido en enlace: <a href="https://www.linkedin.com/in/maria-jose-aldana-bravo-02a86033b/">LinkedIn</a>
+
+Motivo: Permitir acceso directo al perfil de LinkedIn.
+
+PASO 6: Cambiar color del hipervínculo de LinkedIn
+--------------------------------------------------
+Archivo modificado: dist/style.css
+
+Cambios realizados:
+- Inicialmente color: blue
+- Luego cambiado a color: #fde2e2
+
+Motivo: Personalizar el color para que coincida con el tema del sitio.
+
+PASO 7: Actualizar el README.md
+--------------------------------
+Archivo modificado: README.md
+
+Cambios realizados:
+- Reemplazado contenido básico con documentación completa incluyendo:
+  - Descripción del proyecto
+  - Lista detallada de cambios
+  - Instrucciones para ejecutar (Live Server)
+  - Tecnologías usadas
+  - Estructura del proyecto
+
+Motivo: Documentar el proyecto para futuros desarrolladores y usuarios.
+
+PASO 8: Inicializar repositorio Git y hacer commit
+--------------------------------------------------
+Comandos ejecutados:
+1. git init (repositorio ya existía)
+2. git add .
+3. git config user.name "Majo"
+4. git config user.email "maldanab@unbosque.edu.co"
+5. git commit -m "Initial commit: Portfolio MJ Digital Studio with optimizations and interactivity"
+
+Archivos incluidos:
+- LICENSE.txt
+- README.md
+- dist/index.html
+- dist/style.css
+- .vscode/launch.json
+
+Motivo: Versionar el código y guardar cambios en un sistema de control de versiones.
+
+PASO 9: Subir a GitHub
+----------------------
+Comandos ejecutados:
+1. git remote add origin https://github.com/maldanabv/Mariajose-Portafolio-2026.git
+2. git push -u origin master
+
+Resultado: Proyecto subido exitosamente al repositorio remoto.
+
+Motivo: Compartir el código en la nube para acceso remoto y colaboración.
+
+PASO 10: Agregar interactividad a los números en "Sobre mí"
+----------------------------------------------------------
+Archivo modificado: dist/style.css
+
+Cambios realizados:
+- Agregado transition: color 0.3s ease a .stat-item h3
+- Agregado hover: color: #fde2e2
+
+Elementos afectados: Los números 50+, 3+, 20+ en la sección de estadísticas.
+
+Motivo: Hacer los elementos estadísticos más interactivos y atractivos.
+
+RESUMEN FINAL
+=============
+
+- Archivos modificados: index.html, style.css, README.md
+- Nuevas funcionalidades: Interactividad en botones, navegación, números y enlaces
+- Optimizaciones: Código más limpio, texto conciso
+- Control de versiones: Proyecto subido a Git con commit y push a GitHub
+- Tema de colores: Uso consistente de hwb(353 18% 55%) y #fde2e2
+
+Para ejecutar el proyecto:
+1. Abrir carpeta dist en VS Code
+2. Usar Live Server para ver en navegador
+3. O ejecutar python -m http.server 8000 y abrir localhost:8000
+
+Todos los cambios están documentados en el README.md actualizado.</content>
+<parameter name="filePath">c:\Users\Majo\Downloads\mj-digital-studio\cambios_realizados.txt

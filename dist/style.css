@@ -166,6 +166,11 @@ section {
   font-size: 3rem;
   color: var(--text-main);
   margin-bottom: 0;
+  transition: color 0.3s ease;
+}
+
+.stat-item h3:hover {
+  color: #fde2e2;
 }
 
 .services {
