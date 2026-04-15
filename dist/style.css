@@ -1,16 +1,16 @@
 :root {
-  --bg-dark: #1a1a1a;
-  --bg-pink: #F5F3F0;
+  --bg-main: #ffffff;
+  --bg-box: #666666; /* Gris ratón */
   --accent-orange: hwb(353 18% 55%);
-  --text-main: #ffffff;
   --text-dark: #333333;
+  --text-light: #ffffff;
 }
 
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  background-color: var(--bg-dark);
-  color: white;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
   line-height: 1.6;
 }
 
@@ -19,8 +19,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 8%;
-  background: var(--bg-pink);
-  color: var(--text-dark);
+  background: var(--bg-main);
+  border-bottom: 1px solid #eee;
 }
 
 .navbar ul {
@@ -66,15 +66,11 @@ body {
   transform: translateY(-2px);
 }
 
-.btn-secondary:hover {
-  border-color: var(--accent-orange);
-}
-
 .hero {
   display: flex;
   align-items: center;
   padding: 80px 8%;
-  background-color: var(--bg-pink);
+  background-color: var(--bg-main);
   color: var(--text-dark);
   position: relative;
   min-height: 500px;
@@ -104,7 +100,7 @@ body {
   position: absolute;
   font-size: 250px;
   font-weight: 900;
-  color: rgba(255, 77, 41, 0.1);
+  color: rgba(102, 102, 102, 0.05); /* Gris ratón muy suave */
   top: 50%;
   left: 20%;
   transform: translateY(-50%);
@@ -122,7 +118,7 @@ h1 span {
 }
 
 .btn-primary {
-  background: var(--bg-dark);
+  background: var(--bg-box);
   color: white;
   border: none;
   padding: 15px 30px;
@@ -148,38 +144,37 @@ section {
 .section-desc {
   max-width: 600px;
   margin: 0 auto 40px;
-  color: #aaa;
+  color: #666;
 }
 
 .aboutme {
-  background: var(--bg-dark);
+  background: var(--bg-main);
 }
 
 .stats-container {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 40px;
   margin-top: 40px;
 }
 
-.stat-item h3 {
-  font-size: 3rem;
-  color: var(--text-main);
-  margin-bottom: 0;
-  transition: color 0.3s ease;
+.stat-item {
+  background: var(--bg-box);
+  color: var(--text-light);
+  padding: 30px;
+  border-radius: 15px;
+  flex: 1;
+  max-width: 200px;
 }
 
-.stat-item h3:hover {
-  color: #fde2e2;
+.stat-item h3 {
+  font-size: 2.5rem;
+  color: var(--text-light);
+  margin-bottom: 10px;
 }
 
 .services {
-  background: white;
-  color: var(--text-dark);
-}
-
-.services h2 {
-  color: var(--text-dark);
+  background: var(--bg-main);
 }
 
 .services-grid {
@@ -190,14 +185,19 @@ section {
 
 .service-card {
   padding: 30px;
-  border: 1px solid #eee;
+  background: var(--bg-box);
+  color: var(--text-light);
   border-radius: 15px;
   transition: 0.3s;
 }
 
+.service-card p {
+  color: #ddd;
+}
+
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 .service-card .icon {
@@ -215,14 +215,8 @@ section {
   margin: 0 auto;
 }
 
-.skill-info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 8px;
-}
-
 .progress-bar {
-  background: #333;
+  background: #eee;
   height: 8px;
   border-radius: 10px;
 }
@@ -234,51 +228,26 @@ section {
 }
 
 .testimonials {
-  background-color: #fde2e2;
+  background-color: #f5f5f5;
   padding: 50px;
-  text-align: center;
-}
-
-.testimonials p {
-  color: #333333;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.testimonial-user {
-  margin-top: 30px;
-}
-
-.testimonial-user img {
-  width: 80px;
-  height: 80px;
-  border-radius: 40px;
-  display: block;
-  margin: 0 auto 10px auto;
-}
-
-.testimonial-user strong {
-  color: #000000;
-  display: block;
 }
 
 .contact {
-  background: var(--bg-pink);
-  color: var(--text-dark);
+  background: var(--bg-main);
   display: flex;
   gap: 50px;
   text-align: left;
 }
 
-.contact-info,
-.contact-form {
+.contact-info, .contact-form {
   flex: 1;
 }
 
 .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  background: #f9f9f9;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid #eee;
 }
 
 .contact-form input,
@@ -286,10 +255,11 @@ section {
   padding: 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  background: white;
 }
 
 .contact-form button {
-  background: var(--bg-dark);
+  background: var(--bg-box);
   color: white;
   padding: 15px;
   border: none;
@@ -298,10 +268,7 @@ section {
 
 footer {
   padding: 40px;
-  border-top: 1px solid #333;
+  background: var(--bg-main);
+  border-top: 1px solid #eee;
   text-align: center;
-}
-
-.social-icons a:last-child {
-  color: #fde2e2;
 }

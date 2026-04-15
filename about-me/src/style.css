@@ -1,9 +1,17 @@
 
+:root {
+  --bg-main: #ffffff;
+  --bg-box: #666666; /* Gris ratón */
+  --accent-orange: hwb(353 18% 55%);
+  --text-dark: #333333;
+  --text-light: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background-color:#F5F3F0;
-  color: #333;
+  background-color: var(--bg-main);
+  color: var(--text-dark);
 }
 
 
@@ -12,24 +20,31 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 20px 8%;
-  background-color: #F5F3F0;
+  background-color: var(--bg-main);
+  border-bottom: 1px solid #eee;
 }
 
 .navbar ul {
   display: flex; 
   list-style: none;
-  gap: 20px; }
-.navbar a
-{
+  gap: 20px;
+}
+
+.navbar a {
   text-decoration: none;
-  color: #333;
+  color: var(--text-dark);
   font-weight: bold; 
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--accent-orange);
 }
 
 
 .hero {
   display: flex;
-  background-color: #F5F3F0;
+  background-color: var(--bg-main);
   padding: 60px 8%;
   align-items: center;
 }
@@ -39,7 +54,8 @@ body {
 .ux-text-bg { 
   position: absolute; 
   font-size: 150px;
-  color: #722F37; 
+  color: var(--bg-box); 
+  opacity: 0.05;
   top: 0;
   left: 0; 
   font-weight: 900; 
@@ -49,109 +65,135 @@ body {
   flex: 1; 
   padding-left: 40px; 
 }
-.hero-content h1 span
-{
-  color: #722F37; 
+
+.hero-content h1 span {
+  color: var(--accent-orange); 
 }
 
 
 .btn-dark {
-  background: #333; 
+  background: var(--bg-box); 
   color: white; 
   padding: 12px 25px;
   border: none; 
   border-radius: 5px;
   cursor: pointer;
+  transition: 0.3s ease;
 }
-.btn-outline
-{
+
+.btn-dark:hover {
+  background: var(--accent-orange);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
   background: white;
-  border: 1px solid #333;
+  border: 1px solid var(--bg-box);
   padding: 12px 25px; 
-  
   border-radius: 5px; 
   margin-left: 10px;
   cursor: pointer; 
+  transition: 0.3s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--accent-orange);
+  color: var(--accent-orange);
 }
 
 
 .about-skills {
   display: flex;
-  background-color:#F5F3F0; 
+  background-color: var(--bg-main); 
   padding: 80px 8%;
   gap: 50px;
 }
 
-.philosophy, .technical-skills 
-{
+.philosophy, .technical-skills {
   flex: 1; 
 }
 
-.stats
-{
+.stats {
   display: flex; 
-gap: 30px;
+  gap: 30px;
   margin-top: 30px;
 }
-.stats h3
-{ 
+
+.stat-item {
+  background: var(--bg-box);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+}
+
+.stats h3 { 
   font-size: 2rem;
-  color: #722F37;
+  color: var(--accent-orange);
   margin: 0;
 }
 
-.skill-bar
-{ 
+.skill-bar { 
   margin-bottom: 20px;
 }
-.bar 
-{
-  background: #ddd; 
+
+.bar {
+  background: #eee; 
   height: 8px; 
   border-radius: 4px; 
   margin-top: 5px;
 }
-.fill 
-{ 
-  background: #722F37; 
+
+.fill { 
+  background: var(--accent-orange); 
   height: 100%;
   border-radius: 4px;
 }
 
 .contact {
   display: flex;
-  background-color: #F5F3F0;
+  background-color: var(--bg-main);
   padding: 80px 8%;
 }
 
-.contact-text { flex: 1; 
-}
+.contact-text { flex: 1; }
+
 .contact-form { 
   flex: 1;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  background: #f9f9f9;
+  padding: 30px;
+  border-radius: 15px;
 }
 
 .contact-form input,
-.contact-form textarea { padding: 
-  15px;
-  border: 
-    none;
+.contact-form textarea { 
+  padding: 15px;
+  border: 1px solid #ddd;
   border-radius: 5px; 
 }
-.btn-send}
-{ 
-  background: #333;
+
+.contact-form button { 
+  background: var(--bg-box);
   color: white;
   padding: 15px; 
   border: none;
+  border-radius: 5px;
   cursor: pointer; 
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: var(--accent-orange);
+  transform: translateY(-2px);
 }
 
 
 footer {
-  background-color: #1a1a1a;
+  background-color: var(--bg-box);
   color: white;
   padding: 40px;
   text-align: center;
