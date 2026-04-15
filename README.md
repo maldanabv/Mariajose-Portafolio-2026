@@ -38,5 +38,14 @@ Este proyecto es un sitio web estático que presenta el portfolio de MJ Digital 
 - **Sobre Mí (about-me)**: Se ha integrado el proyecto `about-me` directamente dentro del repositorio de MJ Digital Studio.
 - **Vínculos Dinámicos**: El enlace "Sobre mí" ahora conecta automáticamente con el archivo `index.html` del proyecto integrado, permitiendo una transición fluida entre ambos sitios.
 
+## Rediseño Visual (15 de Abril, 2026)
+
+### Unificación de Estilo y Paleta de Colores
+- **Fondo Blanco**: Se ha establecido un fondo blanco limpio (`#ffffff`) en todas las secciones para mejorar la legibilidad y dar un aspecto más moderno y profesional.
+- **Recuadros "Gris Ratón"**: Se ha aplicado un tono gris medio (`#666666`) a todas las tarjetas de servicios, bloques de estadísticas y contenedores de información, creando un contraste elegante con el fondo.
+- **Acentuación en Borgoña**: El color borgoña (`hwb(353 18% 55%)`) se mantiene como el color de acento principal para botones, iconos y elementos destacados, asegurando coherencia visual en todo el sitio.
+- **Adaptación Integral**: Todos los archivos secundarios (`services.html`, `portfolio.html`, `about.html`) y el proyecto integrado `about-me` han sido actualizados para reflejar este nuevo diseño, eliminando las versiones oscuras anteriores en favor de esta estética unificada.
+- **Variables CSS**: Se ha implementado el uso de variables en los archivos CSS para una gestión más eficiente de la identidad visual del sitio.
+
 
 
