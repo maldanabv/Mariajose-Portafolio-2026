@@ -159,17 +159,25 @@ section {
 }
 
 .stat-item {
-  background: var(--bg-box);
-  color: var(--text-light);
+  background: var(--bg-main);
+  color: var(--text-dark);
   padding: 30px;
   border-radius: 15px;
   flex: 1;
   max-width: 200px;
+  transition: 0.4s ease;
+  border: 1px solid #eee;
+}
+
+.stat-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(140, 46, 57, 0.15);
+  border-color: var(--accent-orange);
 }
 
 .stat-item h3 {
   font-size: 2.5rem;
-  color: var(--text-light);
+  color: var(--accent-orange);
   margin-bottom: 10px;
 }
 
@@ -185,19 +193,21 @@ section {
 
 .service-card {
   padding: 30px;
-  background: var(--bg-box);
-  color: var(--text-light);
+  background: var(--bg-main);
+  color: var(--text-dark);
   border-radius: 15px;
-  transition: 0.3s;
+  transition: 0.4s ease;
+  border: 1px solid #eee;
 }
 
 .service-card p {
-  color: #ddd;
+  color: #666;
 }
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 20px 40px rgba(140, 46, 57, 0.2);
+  border-color: var(--accent-orange);
 }
 
 .service-card .icon {
